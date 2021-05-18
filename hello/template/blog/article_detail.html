@@ -1,0 +1,8 @@
+<div class="article">
+  <div class="title">标题: {{ object.title }}</div>
+  <div class="pub_date">{{ object.published_at }}</div>
+  <div class="content">{{ object.content }}</div>
+  <div class="category">发表于: {{ object.category.name }}</div>
+</div>
+<p><a href="/admin/blog/article/{{ object.id }}">修改</a></p>
+<p><a href="/blog">BACK</a></p>

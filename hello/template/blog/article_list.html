@@ -1,0 +1,10 @@
+{% if object_list %}
+{% for article in object_list %}
+{{ article.title }}
+
+{% endfor %}
+{% else %}
+
+對不起沒有文章喔！
+
+{% endif %}
