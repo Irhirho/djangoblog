@@ -13,6 +13,10 @@ info_dict = {
 
 urlpatterns = patterns('',
 		    
+	(r'^$','blog.views.mytime'),
+	(r'^plus/(\d{1,2})/$','blog.views.timedealt'),
+	(r'^hello$','blog.views.helloWorld'),
+
 	(r'^$', 'django.views.generic.list_detail.object_list', info_dict),
 	    
 	(r'^(?P<object_id>\d+)/$', 'django.views.generic.list_detail.object_detail', info_dict),
