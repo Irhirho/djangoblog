@@ -19,4 +19,5 @@ urlpatterns = patterns('',
     (r'^blog/', include('hello.blog.urls')),
     (r'^hello/',include('hello.blog.urls')),
     (r'^mytime/',include('hello.blog.urls')),
+    (r'^books/',include('hello.books.urls')),
 )
