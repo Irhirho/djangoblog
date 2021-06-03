@@ -1,0 +1,33 @@
+<html>
+<head>
+search head
+</head>
+<body>
+
+{% ifequal error '1' %}
+<p style="color:red;" > Please input a keyword to search for.</p>
+{% endifequal %}
+
+{% ifequal error '2' %}
+<p style="color:red;" > nothing found, please retry.</p>
+{% endifequal %}
+<form action="" method="get" onsubmit="return test()">
+        <input type="text" id="q" name="q">
+        
+        <input type ="submit" value="Search">
+</form>
+</body>
+<script type="text/javascript">
+function test(){
+    var str = document.getElementById("q").value;
+    var length=str.length;
+    alert("input string must long than 4");
+    if(length < 5){
+        return false;
+    } else {
+        return true;
+    }
+
+}
+</script>
+</html>
