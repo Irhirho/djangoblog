@@ -11,13 +11,6 @@ ADMINS = (
     # ('Your Name', 'your_email@domain.com'),
 )
 
-#EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
-#EMAIL_USE_TLS=True
-EMAIL_HOST='smtp.126.com'
-
-
-EMAIL_HOST_USER ='shellmeng@126.com'
-EMAIL_HOST_PASSWORD='m123456'
 MANAGERS = ADMINS
 
 DATABASE_ENGINE = 'sqlite3'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -77,7 +70,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
 )
 
 ROOT_URLCONF = 'hello.urls'
@@ -97,6 +89,4 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'hello.blog',
-    'hello.books',
-    'hello.contact',
 )
